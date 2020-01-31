@@ -14,6 +14,8 @@ import { DataVisualizeComponent } from './components/data-visualize/data-visuali
 import { LogInComponent } from './components/log-in/log-in.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FileUploadModule } from 'ng2-file-upload';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,16 @@ import { ContactComponent } from './components/contact/contact.component';
     DataVisualizeComponent,
     LogInComponent,
     RegisterComponent,
-    ContactComponent,
+    ContactComponent
   ],
     imports: [
         BrowserModule,
         MDBBootstrapModule.forRoot(),
         RouterModule,
         FormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FileUploadModule,
+        FlexLayoutModule
     ],
   providers: [],
   bootstrap: [AppComponent]
